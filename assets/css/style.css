@@ -5,10 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gentium Plus" !important;
 }
 
 body {
-  font-family: sans-serif;
   background: white;
   color: black;
   line-height: 1.6;
