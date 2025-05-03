@@ -1,1 +1,73 @@
+/* assets/css/style.css */
+/* Colour palette */
+:root {
+  --bg-dark:   #2e2532;  /* deep plum background */
+  --bg-light:  #E9ECEB;  /* light grey cards/text background */
+  --accent:    #93a302;  /* lime green highlights */
+  --text-col:  #2e2532;  /* dark text */
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg-dark);
+  colour: var(--bg-light);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--bg-light);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  colour: var(--text-col);
+  font-weight: bold;
+}
+
+nav a:hover {
+  colour: var(--accent);
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+h1, h2, h3 {
+  colour: var(--text-col);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  colour: var(--bg-dark);
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+a.button:hover {
+  opacity: 0.9;
+}
