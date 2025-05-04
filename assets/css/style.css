@@ -83,6 +83,8 @@ a.button:hover {
 
 smallcaps {
   font-variant: small-caps;
+  font-size: 103%;
+  line-height: 1 !important;
 }
 
 example {
