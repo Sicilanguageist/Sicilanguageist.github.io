@@ -54,6 +54,7 @@ h1, h2, h3 {
 
 p {
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 a.button {
@@ -74,4 +75,16 @@ smallcaps {
   font-variant: small-caps;
   font-size: 123.5%;
   line-height: 1;
+}
+
+example {
+  display: block;
+  margin-left: 2cm;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+impt {
+  font-weight: bold;
+  color: #C77C0E;
 }
