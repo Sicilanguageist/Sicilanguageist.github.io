@@ -1,23 +1,21 @@
 /* assets/css/style.css */
 /* Clean, no-colour version */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif !important;
+  font-family: "Gentium Plus", serif !important;
 }
 
 body {
-  background: white;
+  background: #f1f1eb;
   color: black;
   line-height: 1.6;
 }
 
 header {
-  background: #f5f5f5;
+  background: #2E3532;
   padding: 1rem;
   border-bottom: 1px solid #ccc;
 }
@@ -31,7 +29,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -40,15 +38,25 @@ nav a:hover {
 }
 
 main {
-  max-width: 800px;
+  width: calc(100vw - 20%);
   margin: 2rem auto;
   background: white;
   padding: 2rem;
   border: 1px solid #eee;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
-h1, h2, h3 {
+@media (max-width: 480px) {
+  main {
+    margin: 10px auto; /* Optional: small margin around it */
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -73,8 +81,6 @@ a.button:hover {
 
 smallcaps {
   font-variant: small-caps;
-  font-size: 123.5%;
-  line-height: 1;
 }
 
 example {
@@ -86,5 +92,23 @@ example {
 
 impt {
   font-weight: bold;
-  color: #C77C0E;
+  color: #93A302;
+}
+
+  table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 2px solid grey;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f9f9f9;
+    }
+i {
+  font-size: 103%;
+  line-height: 1;
 }
