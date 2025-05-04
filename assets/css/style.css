@@ -1,6 +1,8 @@
 /* assets/css/style.css */
 /* Clean, no-colour version */
 
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -66,4 +68,10 @@ a.button {
 
 a.button:hover {
   background: #ccc;
+}
+
+smallcaps {
+  font-variant: small-caps;
+  font-size: 123.5%;
+  line-height: 1;
 }
