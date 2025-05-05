@@ -112,3 +112,23 @@ impt {
     th {
       background-color: #f9f9f9;
     }
+
+/*PHONE SPECIFIC STYLES*/
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  *:not(h1):not(h2):not(h3):not(h4) {
+    font-size: 11px;
+  }
+}
