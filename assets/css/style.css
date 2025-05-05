@@ -129,6 +129,6 @@ impt {
     font-size: 16px;
   }
   *:not(h1):not(h2):not(h3):not(h4) {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
