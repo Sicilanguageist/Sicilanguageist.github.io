@@ -5,6 +5,8 @@
 
 :root {
   --font-size: clamp(14px, 1.5vw, 18px);
+  --bg-col-hf: #2E3532;
+  --text-col-hf: white;
 }
 
 * {
@@ -51,6 +53,48 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes the footer to the bottom */
+}
+
+/* Footer styling (same as before or your version) */
+footer {
+  padding: 1rem 0;
+  background: var(--bg-col-hf);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-col-hf);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  gap: 1.5rem;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer p {
+  margin: 0;
 }
 
 main {
@@ -142,9 +186,7 @@ impt {
     }
     th {
       background-color: #f9f9f9;
-    }
-
-/*PHONE SPECIFIC STYLES*/
+    }/*PHONE SPECIFIC STYLES*/
 
 @media only screen and (max-width: 550px) {
   h1 {
