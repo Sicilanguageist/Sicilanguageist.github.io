@@ -27,11 +27,14 @@ header {
 
 header nav ul {
   display: flex;
-  justify-content: center; /* centres the list items horizontally */
-  list-style: none; /* removes bullet points */
+  justify-content: center;
+  /* centres the list items horizontally */
+  list-style: none;
+  /* removes bullet points */
   padding: 0;
   margin: 0;
-  gap: 1.5rem; /* optional: adds space between items */
+  gap: 1.5rem;
+  /* optional: adds space between items */
 }
 
 nav ul {
@@ -41,7 +44,7 @@ nav ul {
   gap: 1rem;
 }
 
-nav a {
+nav * {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -59,13 +62,15 @@ body {
 }
 
 .page-container {
-  min-height: 100vh; /* full viewport height */
+  min-height: 100vh;
+  /* full viewport height */
   display: flex;
   flex-direction: column;
 }
 
 main {
-  flex: 1; /* pushes the footer to the bottom */
+  flex: 1;
+  /* pushes the footer to the bottom */
 }
 
 /* Footer styling (same as before or your version) */
@@ -96,7 +101,7 @@ footer p {
 }
 
 main {
-  width: calc(100vw - 20%);
+  width: calc(100vw - 35%);
   margin: 2rem auto;
   background: white;
   padding: 2rem;
@@ -106,7 +111,8 @@ main {
 
 @media (max-width: 480px) {
   main {
-    margin: 10px auto; /* Optional: small margin around it */
+    margin: 10px auto;
+    /* Optional: small margin around it */
   }
 }
 
@@ -127,7 +133,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc((var(--font-size)) * 1.25);
+  font-size: calc((var(--font-size)) * 1.2);
 }
 
 h4 {
@@ -137,6 +143,10 @@ h4 {
 p {
   margin-bottom: 1rem;
   margin-top: 1rem;
+  font-size: var(--font-size);
+}
+
+li {
   font-size: var(--font-size);
 }
 
@@ -154,20 +164,20 @@ a.button:hover {
   background: #ccc;
 }
 
-smallcaps {
+.smallcaps {
   font-variant: small-caps;
   font-size: 103%;
   line-height: 1 !important;
 }
 
-example {
+.example {
   display: block;
   margin-left: 2cm;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-impt {
+.impt {
   font-weight: bold;
   color: #93a302;
 }
@@ -176,6 +186,7 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
 th,
 td {
   border: 2px solid grey;
@@ -183,6 +194,24 @@ td {
   text-align: left;
   vertical-align: top;
 }
+
 th {
   background-color: #f9f9f9;
+}
+
+footer {
+  position: relative;
+  padding: 1rem 0;
+  background: var(--bg-col-hf);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-col-hf);
+}
+
+footer .copyright {
+  position: absolute;
+  right: 1rem;
+  bottom: 1.5rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
 }
