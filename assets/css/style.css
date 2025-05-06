@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --font-size: clamp(14px, 1.5vw, 18px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +26,15 @@ header {
   border-bottom: 1px solid #ccc;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: center; /* centres the list items horizontally */
+  list-style: none;        /* removes bullet points */
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem;              /* optional: adds space between items */
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -33,6 +46,7 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: var(--font-size);
 }
 
 nav a:hover {
@@ -62,9 +76,26 @@ h4 {
   margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: calc((var(--font-size))*2);
+}
+
+h2 {
+  font-size: calc((var(--font-size))*1.5);
+}
+
+h3 {
+  font-size: calc((var(--font-size))*1.25);
+}
+
+h4 {
+  font-size: calc((var(--font-size))*1.05);
+}
+
 p {
   margin-bottom: 1rem;
   margin-top: 1rem;
+  font-size: var(--font-size);
 }
 
 a.button {
@@ -115,7 +146,7 @@ impt {
 
 /*PHONE SPECIFIC STYLES*/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 550px) {
   h1 {
     font-size: 24px;
   }
@@ -129,6 +160,6 @@ impt {
     font-size: 16px;
   }
   *:not(h1):not(h2):not(h3):not(h4) {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
