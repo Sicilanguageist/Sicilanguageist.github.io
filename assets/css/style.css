@@ -177,6 +177,14 @@ a.button:hover {
   margin-bottom: 0;
 }
 
+#avviso p {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-indent: 0% !important;
+  margin-top: 0;
+  margin-bottom: 0;  
+}
+
 .impt {
   font-weight: bold;
   color: #93A302;
