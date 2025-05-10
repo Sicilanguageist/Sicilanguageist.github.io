@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Stix Two Text", "Gentium Plus", system-ui !important;
+  font-size-adjust: 0.536 !important;
 }
 
 body {
