@@ -177,7 +177,7 @@ a.button:hover {
   margin-bottom: 0;
 }
 
-#avviso p {
+.example#avviso p {
   margin-left: 5%;
   margin-right: 5%;
   text-indent: 0% !important;
