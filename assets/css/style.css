@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 :root {
   --font-size: clamp(14.5px, 1.5vw, 18px);
   --bg-col-hf: #2e3532;
@@ -11,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Stix Two Text", "Gentium Plus", system-ui !important;
+  font-family: "Stix Two Text", "Gentium Plus", "Noto Serif", "Cambria", serif !important;
   font-size-adjust: 0.536 !important;
 }
 
@@ -251,12 +249,12 @@ footer {
   color: var(--text-col-hf);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .velar-table * {
     font-size: 12px !important;
   }
   * {
-    font-family: system-ui !important;
+    font-family: serif !important;
   }
 }
 
