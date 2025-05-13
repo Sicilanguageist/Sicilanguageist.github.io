@@ -19,38 +19,6 @@ body {
   line-height: 1.5;
 }
 
-header {
-  background: #2e3532;
-  padding: 1rem;
-  border-bottom: 1px solid #ccc;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-nav * {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: var(--font-size);
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 html,
 body {
   height: 100%;
@@ -64,36 +32,9 @@ body {
   flex-direction: column;
 }
 
-main {
+.content {
   flex: 1;
   /* pushes the footer to the bottom */
-}
-
-/* Footer styling (same as before or your version) */
-footer {
-  padding: 1rem 0;
-  background: var(--bg-col-hf);
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-col-hf);
-}
-
-footer nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 0.5rem 0;
-  gap: 1.5rem;
-}
-
-footer nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer p {
-  margin: 0;
 }
 
 main {
@@ -144,7 +85,7 @@ a.button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background: #ddd;
+  background: #f1f1eb;
   color: black;
   text-decoration: none;
   border-radius: 0.25rem;
@@ -170,6 +111,7 @@ a.button:hover {
   text-indent: -10%;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 1vw;
 }
 
 .example#avviso p {
@@ -177,7 +119,8 @@ a.button:hover {
   margin-right: 5%;
   text-indent: 0% !important;
   margin-top: 0;
-  margin-bottom: 0;  
+  margin-bottom: 0; 
+  padding: 1vw;
 }
 
 .impt {
@@ -204,15 +147,6 @@ th {
   font-variant: small-caps;
 }
 
-footer {
-  position: relative;
-  padding: 1rem 0;
-  background: var(--bg-col-hf);
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-col-hf);
-}
-
 /* Make body take full height */
 html, body {
   height: 100%;
@@ -234,19 +168,6 @@ ul li {
   list-style-type: disc;
 }
 
-nav ul li {
-  list-style-type: none;
-}
-
-/* Your footer styles */
-footer {
-  padding: 1rem 0;
-  background: var(--bg-col-hf);
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-col-hf);
-}
-
 @media (max-width: 500px) {
   .velar-table * {
     font-size: 12px !important;
@@ -259,4 +180,32 @@ footer {
 .prorth {
   font-style: italic;
   font-weight: bold;
+}
+
+nav {
+  background-color: #2e3532;
+  padding: 3vh;
+}
+
+.header-content, .footer-content {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.header-content a, .footer-content a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-content a:hover, .footer-content a:hover {
+  color: #93A302;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+img.social-icon {
+  height: auto;
+  width: 2vh;
 }
