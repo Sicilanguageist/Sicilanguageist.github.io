@@ -103,6 +103,7 @@ a.button:hover {
   display: block;
   background-color: var(--bg-col);
   border-radius: 0.3rem;
+  padding: 1vw;
 }
 
 .example p {
@@ -111,7 +112,6 @@ a.button:hover {
   text-indent: -10%;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1vw;
 }
 
 .example#avviso p {
