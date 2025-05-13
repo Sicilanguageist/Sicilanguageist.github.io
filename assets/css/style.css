@@ -207,5 +207,5 @@ nav {
 
 img.social-icon {
   height: auto;
-  width: 2vh;
+  width: var(--font-size);
 }
