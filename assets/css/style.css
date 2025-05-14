@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'STIX Two Text';
-  src: url('https://github.com/Sicilanguageist/Sicilanguageist.github.io/blob/main/fonts/STIXTwoText-Italic.woff2') format('woff2');
+  src: url('https://raw.githubusercontent.com/Sicilanguageist/Sicilanguageist.github.io/main/fonts/STIXTwoText.woff2') format('woff2');
   font-weight: 400 700; /* weight range supported */
   font-style: normal;
   font-display: swap;
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'STIX Two Text';
-  src: url('https://github.com/Sicilanguageist/Sicilanguageist.github.io/blob/main/fonts/STIXTwoText.woff2') format('woff2-variations');
+  src: url('https://raw.githubusercontent.com/Sicilanguageist/Sicilanguageist.github.io/main/fonts/STIXTwoText-Italic.woff2') format('woff2-variations');
   font-weight: 400 700;
   font-style: italic;
   font-display: swap;
