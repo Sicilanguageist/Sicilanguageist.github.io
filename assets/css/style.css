@@ -187,7 +187,7 @@ a.button:hover {
   display: block;
   background-color: var(--light-colour);
   border-radius: 0.3rem;
-  padding: 1vw;
+  padding: 10px;
 }
 
 .example p {
@@ -204,7 +204,7 @@ a.button:hover {
   text-indent: 0% !important;
   margin-top: 0;
   margin-bottom: 0; 
-  padding: 1vw;
+  padding: 10px;
 }
 
 .impt {
